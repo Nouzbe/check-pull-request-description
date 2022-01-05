@@ -1,0 +1,15 @@
+{
+  "name": "check-pull-request-description",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Benjamin Amelot",
+  "files": [
+    "action.yml",
+    "index.js"
+  ],
+  "main": "index.js",
+  "devDependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^1.1.0"
+  }
+}

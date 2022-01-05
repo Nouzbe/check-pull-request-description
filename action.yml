@@ -1,0 +1,5 @@
+name: PR description check
+description: Ensures that pull requests have a non-empty description.
+runs:
+  using: node12
+  main: index.js
