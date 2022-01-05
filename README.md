@@ -7,7 +7,7 @@ A GitHub action ensuring that PRs have descriptions.
 # Example Workflow
 
 ```yml
-name: 'PR description check'
+name: "PR description check"
 on:
   pull_request:
     types:
@@ -20,5 +20,5 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v1
-      - uses: nouzbe/check-pull-request-description@v1
+      - uses: nouzbe/check-pull-request-description@v1.7
 ```

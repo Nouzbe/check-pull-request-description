@@ -27970,12 +27970,16 @@ const core = __nccwpck_require__(2186);
 const github = __nccwpck_require__(5438);
 
 function run() {
-  const body = github.context.payload.pull_request?.body;
+  const pullRequest = github.context.payload.pull_request;
 
-  if (body === "") {
-    core.setFailed(
-      "The pull request description is empty. Please add a description."
-    );
+  if(pullRequest) {
+    const body = pullRequest.body;
+
+    if (body === "") {
+      core.setFailed(
+        "The pull request description is empty. Please add a description."
+      );
+    }
   }
 }
 
