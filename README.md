@@ -20,5 +20,5 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v1
-      - uses: nouzbe/check-pull-request-description@v1.8
+      - uses: nouzbe/check-pull-request-description@v1.11
 ```
