@@ -1,5 +1,8 @@
-name: PR description check
-description: Ensures that pull requests have a non-empty description.
+name: Check pull request description
+description: Ensures that pull requests have a non-empty description
+branding:
+  icon: book-open
+  color: green
 runs:
   using: node12
   main: index.js
